@@ -1,0 +1,50 @@
+body {
+    background-color: aquamarine;
+}
+
+@media only screen and (max-width: 1000px) {
+    body {
+        background-color: rgb(55, 44, 206);
+    }
+}
+
+.container .item {
+    display: flex;
+}
+
+.container .item {
+    padding: 10px;
+    flex: 1;
+    background-color: white;
+    border: burlywood solid 1px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+.grid-container .item {
+    padding: 10px;
+    flex: 1;
+    background-color: white;
+    border: burlywood solid 1px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 960px) {
+    .grid-container {
+       grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
